@@ -46,8 +46,8 @@ class ApplicationController < Sinatra::Base
   end
   
   delete '/articles/:id/delete' do
-    binding.pry
-    # Article.destory(params[:id])
+
+     Article.destory(params[:id])
     erb :show
   end
 
